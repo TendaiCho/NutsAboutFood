@@ -1,0 +1,103 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        
+        <title>
+Nuts About Food |Chefs
+        </title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+<header>
+    <div class="container">
+        <div id="branding">
+            <h1><span class="highlight">Nuts</span>  About Food</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li ><a href="index.html">Home</a></li>
+                    <li ><a href="meat.html">Meats</a></li>
+                    <li ><a href="bakery.html">Bakery</a></li>
+                    <li ><a href="vegan.html">Vegan</a></li>
+                    <li class="current"><a href="chefs.html">Chefs</a></li>
+                    <li ><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+<section id="newsletter">
+    <div class="container">
+        <h1>Subscribe to our newsletter</h1>
+        <form>
+            <input type="email" placeholder="Enter Email..">
+            <button type="submit" class="button_1">Subscribe</button>
+        </form> 
+    </div>
+</section>
+<section id="main">
+    <div class="container">
+        <article id="main-col-alone"> 
+<h1 class="page-title">Chefs</h1>
+<ul id="chefs">
+    
+    <li>
+        <h3> Chef Rivi </h3>
+        <img src="./img/chefs/chef rivi.jpg">
+        
+        <br>
+        <p>
+            Chef & Saveur Blog Awards Finalist! Welcome to Nuts About Food where you’ll find hundreds of delicious
+            <span id="dots">...</span><span id="more">healthy, VEGGIE-powered recipes with tips and tricks from a chef’s home kitchen. A healthy, seasonal, whole foods recipe blog to nurture body, mind and spirit. Join us!</span></p>
+
+            <button onclick="readMore()" id="myBtn" class="button_1">Read more</button> </p>
+        <p>Speciality:Meats</p>
+    </li>
+    <li>
+        <h3> Chef Carmen </h3>
+		<img src="./img/chefs/chef_carmen.jpg">
+		<br>
+        <p>
+           Carmen Moyo is the former Executive Editor at Nuts About Food, where she managed all food,
+            <span id="dots">...</span><span id="more">culture, video and social content. She had worn many hats at the brand over the years: traveling the country in pursuit of pickles, creating gravity-defying "cheese pulls", and almost burning down the Delish kitchen with marshmallow cupcakes.</span></p>
+
+            <button onclick="readMore()" id="myBtn" class="button_1">Read more</button> </p>
+        <p>Speciality:Meats</p>
+    </li>
+    <li>
+        <h3> Chef Martina </h3>
+        <img src="./img/chefs/chef martine.jpg">
+        <br>
+        <p>
+           Martina  Lowdery is the digital food producer at Nuts About Food, otherwise known as our resident queen of recipe galleries.
+            <span id="dots">...</span><span id="more">Previously, she attended the Natural Gourmet Institute for culinary school and worked at/managed a number of New York restaurants. She loves anything vegan, foods masquerading as other foods (hello, cauliflower), and a well-used Oxford comma</span></p>
+
+            <button onclick="readMore()" id="myBtn" class="button_1">Read more</button> </p>
+        <p>Speciality:Meats</p>
+    </li>
+</ul>
+
+        </article>
+       
+    </div>
+</section>
+    </body>
+    <footer>
+        <p>Nuts About Food, Copyright &copy; 2023</p>
+    </footer>
+    <script>function readMore() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      } </script>
+</html>
